@@ -1,0 +1,70 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  /*alterar modelo de caixa padrão, como o tamanho total do elemento é calculado*/
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;/*alinha horizontalmente no centro*/
+  align-items: center;/*alinha verticalmente no centro*/
+  min-height: 100vh;/*garante que o conteúdo ocupe pelo menos toda a altura da janela*/
+}
+
+section .conteudo {
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section .conteudo .form {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+section .conteudo .form .buscar {
+  width: 100%;
+  padding: 12px;
+  padding-left: 45px;
+  padding-right: 60px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 17px;
+}
+
+section .conteudo .botoes {
+  margin-top: 20px;
+}
+
+section .conteudo .botoes a {
+  text-decoration: none;
+  background-color: #e6e6e6;
+  margin: 0 5px;
+  padding: 12px 20px;
+  color: #555;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+section .conteudo .botoes a:hover {
+  border: 1px solid #ccc;
+}
+
+section .conteudo .botoes a::after {
+  content: '';
+  width: 100%;
+}
+
